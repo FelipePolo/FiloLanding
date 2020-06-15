@@ -1,3 +1,7 @@
+@import "SCSS/functions";
+@import "SCSS/variables";
+@import "SCSS/mixins/breakpoints";
+
 *{
   padding: 0;
   margin: 0;
@@ -76,21 +80,25 @@ body{
       width: 90%;
       div{
         width: 100%;
-
+        justify-content: center;
         input{
+          margin-top: 10px;
           border: 1px solid var(--VeryDarkBlue);
           color: var(--LightGray);
           padding: 5px 20px;
           font-size: 0.9em;
           height: 45px;
+          width: 100% !important;
+          max-width: 280px !important;
         }
 
         button{
           width: 100%;
-          margin-top: 20px;
+          margin-top: 10px;
           background-color: var(--BrighBlue);
           font-weight: 700;
           height: 45px;
+          max-width: 280px !important;
         }
 
       }
@@ -233,21 +241,25 @@ body{
       margin-bottom: 30px;
       div{
         width: 100%;
-        
+        justify-content: center;
         input{
+          margin-top: 10px;
           border: 1px solid var(--VeryDarkBlue);
           color: var(--LightGray);
           padding: 5px 20px;
           font-size: 0.9em;
           height: 45px;
+          width: 100% !important;
+          max-width: 280px !important;
         }
 
         button{
           width: 100%;
-          margin-top: 20px;
+          margin-top: 10px;
           background-color: var(--BrighBlue);
           font-weight: 700;
           height: 45px;
+          max-width: 280px !important;
         }
 
       }
@@ -311,5 +323,46 @@ footer{
     color: #fff;
 
     margin: 0 8px;
+  }
+}
+
+@include media-breakpoint-up(lg){
+
+  .firstContent{
+    div{
+      h1{
+        text-align: left;
+      }
+      article{
+        text-align: left;
+      }
+      form{
+        width: 100%;
+        button{
+          width: 200px !important;
+        }
+        input{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .secondContent{
+    div{
+      h1{
+        text-align: left;
+      }
+    }
+  }
+
+  footer{
+    div{
+      ul{
+        text-align: center;
+      }
+    }
+  }
+  .icons{
+    margin: auto 0;
   }
 }

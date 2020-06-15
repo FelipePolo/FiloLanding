@@ -83,22 +83,29 @@ body {
 
 .firstContent div form div {
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .firstContent div form div input {
+  margin-top: 10px;
   border: 1px solid var(--VeryDarkBlue);
   color: var(--LightGray);
   padding: 5px 20px;
   font-size: 0.9em;
   height: 45px;
+  width: 100% !important;
+  max-width: 280px !important;
 }
 
 .firstContent div form div button {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: var(--BrighBlue);
   font-weight: 700;
   height: 45px;
+  max-width: 280px !important;
 }
 
 .secondContent div {
@@ -278,22 +285,29 @@ body {
 
 .thirdContent div form div {
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .thirdContent div form div input {
+  margin-top: 10px;
   border: 1px solid var(--VeryDarkBlue);
   color: var(--LightGray);
   padding: 5px 20px;
   font-size: 0.9em;
   height: 45px;
+  width: 100% !important;
+  max-width: 280px !important;
 }
 
 .thirdContent div form div button {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: var(--BrighBlue);
   font-weight: 700;
   height: 45px;
+  max-width: 280px !important;
 }
 
 footer {
@@ -363,5 +377,32 @@ footer div ul li a:hover {
           align-items: center;
   color: #fff;
   margin: 0 8px;
+}
+
+@media (min-width: 992px) {
+  .firstContent div h1 {
+    text-align: left;
+  }
+  .firstContent div article {
+    text-align: left;
+  }
+  .firstContent div form {
+    width: 100%;
+  }
+  .firstContent div form button {
+    width: 200px !important;
+  }
+  .firstContent div form input {
+    width: 100%;
+  }
+  .secondContent div h1 {
+    text-align: left;
+  }
+  footer div ul {
+    text-align: center;
+  }
+  .icons {
+    margin: auto 0;
+  }
 }
 /*# sourceMappingURL=fylostyle.css.map */
